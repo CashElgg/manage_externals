@@ -1,0 +1,15 @@
+External JavaScript and CSS Manager for Elgg
+
+INTRO
+This library provides 2 functions for including external javascript and css files.
+It handles including them into the web page and prevents multiple inclusions of
+the same file.
+
+USAGE
+elgg_register_external_js(<url>, <identifier>);
+elgg_register_external_css(<url>, <identifier>);
+
+EXAMPLES
+elgg_register_external_js('http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js', 'jquery-ui');
+elgg_register_external_js('http://example.org/mod/myplugin/js/jquery.rating.min.js', 'jquery.rating');
+
